@@ -13,11 +13,9 @@ $ gem install erb-trim
 ```rb
 require 'erb/trim'
 
-erb = <<-ERB
-line
-    <%-= 'value' %>
-line
-ERB
+erb_notrim = "  <%-= 'value' %>"
+erb_trim   = "  <%-= 'value' if false %>"
 
-Erb::Trim.new(erb).result #=> "line\n\nline"
+ERB::Trim.new(erb_notrim).result #=> "  value"
+ERB::Trim.new(erb_trim).result   #=> ""
 ```

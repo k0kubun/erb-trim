@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "lib/erb/trim/version"
+require_relative "lib/erb/trim"
 
 Gem::Specification.new do |spec|
   spec.name = "erb-trim"
-  spec.version = Erb::Trim::VERSION
+  spec.version = ERB::Trim::VERSION
   spec.authors = ["Takashi Kokubun"]
   spec.email = ["takashikkbn@gmail.com"]
 
