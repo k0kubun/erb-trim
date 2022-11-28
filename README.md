@@ -1,6 +1,6 @@
 # ERB::Trim
 
-An ERB extension that supports `<%-=`.
+An ERB extension that supports `<%-=`. [ruby/erb#24](https://github.com/ruby/erb/issues/24)
 
 ## Installation
 
